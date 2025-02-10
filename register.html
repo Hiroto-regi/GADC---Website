@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="register.css"/>
+    <link rel="icon" href="img/gadclogo.png" sizes="32x32" type="image/png">
+    <title>GIS Applications Development Center</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class = "navbar">
+        <div class = "navbar_container">
+            <div class = "logo_container">
+            <a href = "index.html" id = "navbar_logo">
+                <img src = "img/gadclogo-nobackground.png" alt = "gadc-logo" class = "navbar_logo"></a>
+            </div>
+            <div class="text_container">
+                <p></p>
+            </div>
+                <div class="burger_icon">&#9776;</div>
+                <div class = "navbar_toggle" id = "mobile-menu"></div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="index.html" class="navbar_links"><i class="fa fa-home"></i> Home </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="about.html" class="navbar_links"><i class="fa fa-info-circle"></i> About </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="projects.html" class="navbar_links"><i class="fa fa-folder"></i> Projects <i class="fa fa-caret-down"></i></a> 
+                        <ul class = "dropdown">
+                            <li>
+                                <a href="hugis.html">HUGIS</a>
+                            </li>
+                            <li>
+                                <a href="geds.html">GEDS</a>
+                            </li>
+                            <li>
+                                <a href="guide.html">GUIDE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar_links"><i class="fa fa-cogs"></i> Map Layout </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="photos.html" class="navbar_links"><i class="fa fa-image"></i> Photos</a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <div class="register-container">
+        <div class="register-wrapper">
+            <div class="box register-form-box">
+                <header>Register</header>
+                    <div class = "field input">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" autocomplete="off" required>
+                    </div>
+                    
+                    <div class = "field input">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" autocomplete="off" required>
+                    </div>
+                    
+                    <div class = "field input">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" autocomplete="off" required>
+                    </div>
+
+                    <div class = "field input">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" autocomplete="off" required>
+                    </div>
+
+                    <div class = "field input">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" autocomplete="off" required>
+                    </div>
+
+                    <div class = "field input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" autocomplete="off" required>
+                    </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LdOPXopAAAAAJTZUVBHSN1zviVpIUvjK0HiV1fK"></div>
+
+                    <div class = "field">
+                        <button onclick="register()" class = "register-button">Register</button>
+                    </div>
+                    
+                    <div class="links">
+                        Already a member? <a href="login.html">Sign In</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2020 GIS Applications Development Center. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/gis.center.bsutneug" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKFhPdrfndlJdvGlDdghhRthWZDVgmdxwFBRhKlkFNGWXwgGLXXszvgwGvLLLcVpwLrpL" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope-open"></i></a>
+            <a href="/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </footer>
+    
+</body>
+
+<!-- Database scripts -->
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script src="register.js"></script>
+</html>

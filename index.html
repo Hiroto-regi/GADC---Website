@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="icon" href="img/gadclogo.png" sizes="32x32" type="image/png">
+    <title>GIS Applications Development Center</title>
+</head>
+    <script src="index.js"></script>
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class = "navbar">
+        <div class = "navbar_container">
+            <div class = "logo_container">
+            <a href = "#home" id = "navbar_logo">
+                <img src = "img/gadclogo-nobackground.png" alt = "gadc-logo" class = "navbar_logo"></a>
+            </div>
+            <div class="text_container">
+                <p></p>
+            </div>
+                <div class="burger_icon">&#9776;</div>
+                <div class = "navbar_toggle" id = "mobile-menu"></div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="#home" class="navbar_links"><i class="fa fa-home"></i> Home </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="about.html" class="navbar_links"><i class="fa fa-info-circle"></i> About </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="projects.html" class="navbar_links"><i class="fa fa-folder"></i> Projects <i class="fa fa-caret-down"></i></a> 
+                        <ul class = "dropdown">
+                            <li>
+                                <a href="hugis.html">HUGIS</a>
+                            </li>
+                            <li>
+                                <a href="geds.html">GEDS</a>
+                            </li>
+                            <li>
+                                <a href="guide.html">GUIDE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="login.html" class="navbar_links"><i class="fa fa-cogs"></i> Map Layout</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="photos.html" class="navbar_links"><i class="fa fa-image"></i> Photos</a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+
+    <div class="home" id="home">
+        <video autoplay loop muted plays-inline class="loop-video" id = "loopVideo">
+            <source src="video/landing-page-full-ratio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- News and Announcements Section -->
+
+    <div class = "news-container">
+        <div class = "news-section">
+            <div class = "news-title">
+                <h2>News and Announcements</h2>
+                <p class = "news-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur est hic praesentium qui, ratione velit asperiores et quis, animi laboriosam, nisi aliquam quod. A, beatae. Deserunt adipisci tempora suscipit!</p>
+            </div>
+            <div class = "news-cards">
+                <div class = "news-card">
+                    <div class = "image-section">
+                        <img src="photos/photo15.png">
+                    </div>
+                    <div class = "news-content">
+                        <h4>Title One</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laudantium maxime inventore excepturi assumenda blanditiis.</p>
+                        <a href = "">Read More</a>
+                    </div>
+                    <div class = "posted-date">
+                    <p>Posted on January 26, 2024</p>
+                    </div>
+                </div>
+
+                <div class = "news-card">
+                    <div class = "image-section">
+                        <img src="photos/photo1.png">
+                    </div>
+                    <div class = "news-content">
+                        <h4>Title Two</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laudantium maxime inventore excepturi assumenda blanditiis.</p>
+                        <a href = "">Read More</a>
+                    </div>
+                    <div class = "posted-date">
+                    <p>Posted on January 26, 2024</p>
+                    </div>
+                </div>
+
+                <div class = "news-card">
+                    <div class = "image-section">
+                        <img src="photos/photo14.png">
+                    </div>
+                    <div class = "news-content">
+                        <h4>Title Three</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laudantium maxime inventore excepturi assumenda blanditiis.</p>
+                        <a href = "">Read More</a>
+                    </div>
+                    <div class = "posted-date">
+                    <p>Posted on January 26, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+
+    <div class = "services-container" id = "services">
+        <div class = "services-wrapper">
+            <div class = "service">
+                <h2 class = "services-title">Our Services<span></span></h2>
+                <div class = "cards">
+                    <div class = "card">
+                        <i class = "fa fa-database"></i>
+                        <h2>Data Acquisition</h2>
+                        <p>
+                            <ul>
+                            <li>Drone Imagery</li>
+                            <li>Aerial Photography</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class = "card">
+                        <i class = "fa fa-comments"></i>
+                        <h2>Consultation</h2>
+                    <p>  
+                        <br>
+                        Project and/or study assessment
+                        
+                    </p>
+                    </div>
+                    <div class = "card">
+                        <i class = "fa fa-desktop"></i>
+                        <h2>GIS Training</h2>
+                        <p> <br>
+                            Online and face to face training
+                            </p>
+                    </div>
+                    <div class = "card">
+                        <i class = "fa fa-cogs"></i>
+                        <h2>Data Processing</h2>
+                        <p> <br>
+                            Map creation (based on data acquired or provided)
+                            </p>
+                    </div>
+                    <div class = "card">
+                        <a href="login.html">
+                            <i class="fa fa-paper-plane"></i>
+                            <h2>Borrow Drone</h2>
+                            <p> <br>
+                                Click me to borrow drone!
+                                </p>
+                            </a>
+                    </div>
+                    <div class = "card">
+                        <i class = "fa fa-map"></i>
+                        <h2>Others</h2>
+                        <p>
+                            <ul>
+                                <li>Map Printing</li>
+                                <li>Providing available maps</li>
+                                <li>(created by GADC)</li>
+                                <li>Image Interpretation</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events and Activities Section -->
+    <div class = "event-container">
+        <div class = "event-wrapper">
+                <h1 class = "event-title">Events and Activities</h1>
+
+                <div class = "event">
+                    <div class = "event-card">
+                        <img src="bagwis-photos/bagwis1.jpg" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="bagwis-photos/bagwis1.jpg" class = "photo-img" alt="">
+                            <h1 class = "event-card-title">BAGwIS</h1>
+                            <p class = "event-card-info">Basic Applications of GIS with Imagery and Spatial-georeferencing (BAGwIS). </p>
+                        </div>
+                    </div>
+
+                    <div class = "event-card">
+                        <img src="bagwis-photos/bagwis2.jpg" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="bagwis-photos/bagwis2.jpg" class = "photo-img-introduction" alt="">
+                            <h1 class = "event-card-title">BAGwIS</h1>
+                            <h2 class = "event-card-subtitle">Introduction to GIS</h2>
+                        </div>
+                    </div>
+
+                    <div class = "event-card">
+                        <img src="bagwis-photos/bagwis3.jpg" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="bagwis-photos/bagwis3.jpg" class = "photo-img-drone-operation" alt="">
+                            <h1 class = "event-card-title">BAGwIS</h1>
+                            <h2 class = "event-card-subtitle">Drone Operation</h2>
+                        </div>
+                    </div>
+
+                    <div class = "event-card">
+                        <img src="bagwis-photos/bagwis4.jpg" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="bagwis-photos/bagwis4.jpg" class = "photo-img-drone-imagery" alt="">
+                            <h1 class = "event-card-title">BAGwIS</h1>
+                            <h2 class = "event-card-subtitle">Drone Imagery Georeferencing</h2>
+                        </div>
+                    </div>
+
+                    <div class = "event-card">
+                        <img src="bagwis-photos/bagwis5.jpg" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="bagwis-photos/bagwis5.jpg" class = "photo-img-image-digitization" alt="">
+                            <h1 class = "event-card-title">BAGwIS</h1>
+                            <h2 class = "event-card-subtitle">Image Digitization</h2>
+                        </div>
+                    </div>
+                    
+                    <div class = "event-card">
+                        <img src="bagwis-photos/bagwis6.jpg" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="bagwis-photos/bagwis6.jpg" class = "photo-img-map-layout" alt="">
+                            <h1 class = "event-card-title">BAGwIS</h1>
+                            <h2 class = "event-card-subtitle">Map Layout</h2>
+                        </div>
+                    </div>
+
+                    <div class = "event-card">
+                        <img src="giscover-photos/giscover1.jpg" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="giscover-photos/giscover1.jpg" class = "photo-img" alt="">
+                            <h1 class = "event-card-title">GIScover</h1>
+                            <p class = "event-card-info">GIScover is a two-day seminar held at Batangas State University that focuses on Geographic Information Systems (GIS). </p>
+                        </div>
+                    </div>
+
+                    <div class = "event-card">
+                        <img src="first-training/first-training-1.png" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="first-training/first-training-1.png" class = "photo-img" alt="">
+                            <h1 class = "event-card-title-first-gis">1st GIS TRAINING with NEDA</h1>
+                            <h2 class = "event-card-subtitle">GIS Fundamentals for Economic Planning and Development Focused on Supply Chain</h2>
+                        </div>
+                    </div>
+
+                    <div class = "event-card">
+                        <img src="second-training/second-training-1.png" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="second-training/second-training-1.png" class = "photo-img" alt="">
+                            <h1 class = "event-card-title-second-gis">2nd GIS TRAINING with NEDA</h1>
+                            <h2 class = "event-card-subtitle">GIS Fundamentals for Economic Planning and Development Focused on Supply Chain</h2>
+                        </div>
+                    </div>
+
+                    <div class = "event-card">
+                        <img src="basic-gis-training/basic-gis-training-1.png" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="basic-gis-training/basic-gis-training-1.png" class = "photo-img" alt="">
+                            <h1 class = "event-card-title-basic-gis">Basic GIS Training with CRC Project</h1>
+                        </div>
+                    </div>
+
+                    <div class = "event-card">
+                        <img src="advanced-gis-training/advanced-gis-training-1.png" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="advanced-gis-training/advanced-gis-training-1.png" class = "photo-img" alt="">
+                            <h1 class = "event-card-title-advanced-gis">Advanced GIS Training with CRC Project</h1>
+                            <h2 class = "event-card-subtitle">GIS Fundamentals for Economic Planning and Development Focused on Supply Chain</h2>
+                        </div>  
+                    </div>
+                    
+                    <div class = "event-card">
+                        <img src="gis-day-photos/gis-day-1.JPG" class = "photo-img" alt="">
+                        <div class = "event-card-body">
+                            <img src="gis-day-photos/gis-day-2.JPG" class = "photo-img" alt="">
+                            <h1 class = "event-card-title-gis-day">GIS Day: Future's Thinking in Geospatial Innovations</h1>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Facilities -->
+    <div class = "research-container">
+        <div class = "research-wrapper">
+            <h1 class = "research-title">Research Facilities <span></span></h1>
+            <div class = "research">
+                <a href="#">
+                    <span class="single-img img-one">
+                        <span class = "img-text">
+                            <h4>Workstation with Licensed ArcGIS Online Desktop Software and GIS</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fuga!</p>
+                        </span>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="single-img img-two">
+                        <span class = "img-text">
+                            <h4>GPS Handheld Devices</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus!</p>
+                        </span>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="single-img img-three">
+                        <span class = "img-text">
+                            <h4>Drone - DJI MAVIC AIR 2</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus!</p>
+                        </span>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="single-img img-four">
+                        <span class = "img-text">
+                            <h4>Large Format Printer - HP Designjet T830</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus!</p>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Footer -->
+        <footer>
+            <p>&copy; 2020 GIS Applications Development Center. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/gis.center.bsutneu" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKFhPdrfndlJdvGlDdghhRthWZDVgmdxwFBRhKlkFNGWXwgGLXXszvgwGvLLLcVpwLrpL" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope-open"></i></a>
+            </div>
+        </footer>
+</body>
+</html>
