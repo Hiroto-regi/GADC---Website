@@ -136,13 +136,16 @@
                         </p>
                     </div>
                     <div class = "card">
-                        <i class = "fa fa-comments"></i>
-                        <h2>Consultation</h2>
-                    <p>  
-                        <br>
-                        Project and/or study assessment
-                        
-                    </p>
+                        <a href="consultation_form.html">
+                            <i class = "fa fa-comments"></i>
+                            <h2>Consultation</h2>
+                            <p> 
+                                Project and/or study assessment<br>
+                                Click to send an email for consultation!
+                             </ul>
+                            </p>
+                            
+                        </a>
                     </div>
                     <div class = "card">
                         <i class = "fa fa-desktop"></i>
@@ -304,48 +307,62 @@
         <div class = "research-wrapper">
             <h1 class = "research-title">Research Facilities <span></span></h1>
             <div class = "research">
-                <a href="#">
-                    <span class="single-img img-one">
-                        <span class = "img-text">
-                            <h4>Workstation with Licensed ArcGIS Online Desktop Software and GIS</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fuga!</p>
-                        </span>
+                <span class="single-img img-one">
+                    <span class = "img-text">
+                        <h4>Workstation with Licensed ArcGIS Online Desktop Software and GIS</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, fuga!</p>
                     </span>
-                </a>
-                <a href="#">
-                    <span class="single-img img-two">
-                        <span class = "img-text">
-                            <h4>GPS Handheld Devices</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus!</p>
-                        </span>
+                </span>
+                <span class="single-img img-two">
+                    <span class = "img-text">
+                        <h4>GPS Handheld Devices</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus!</p>
                     </span>
-                </a>
-                <a href="#">
-                    <span class="single-img img-three">
-                        <span class = "img-text">
-                            <h4>Drone - DJI MAVIC AIR 2</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus!</p>
-                        </span>
+                </span>
+                <span class="single-img img-three">
+                    <span class = "img-text">
+                        <h4>Drone - DJI MAVIC AIR 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus!</p>
                     </span>
-                </a>
-                <a href="#">
-                    <span class="single-img img-four">
-                        <span class = "img-text">
-                            <h4>Large Format Printer - HP Designjet T830</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus!</p>
-                        </span>
+                </span>
+                <span class="single-img img-four">
+                    <span class = "img-text">
+                        <h4>Large Format Printer - HP Designjet T830</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus!</p>
                     </span>
-                </a>
+                </span>
             </div>
         </div> 
     </div>
-
+    <script>
+// Scroll to Top Button
+document.addEventListener('DOMContentLoaded', function () {
+            const scrollTopBtn = document.createElement('button');
+            scrollTopBtn.innerHTML = '&#8679;';
+            scrollTopBtn.id = 'scrollTopBtn';
+            document.body.appendChild(scrollTopBtn);
+        
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) {
+                    scrollTopBtn.style.display = 'block';
+                } else {
+                    scrollTopBtn.style.display = 'none';
+                }
+            });
+        
+            scrollTopBtn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+        </script>
     <!-- Footer -->
         <footer>
             <p>&copy; 2020 GIS Applications Development Center. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://www.facebook.com/gis.center.bsutneu" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKFhPdrfndlJdvGlDdghhRthWZDVgmdxwFBRhKlkFNGWXwgGLXXszvgwGvLLLcVpwLrpL" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope-open"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gis.center@g.batstate-u.edu.ph" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-envelope-open"></i>
+                </a>
             </div>
         </footer>
 </body>

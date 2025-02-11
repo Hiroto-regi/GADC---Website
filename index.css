@@ -173,6 +173,7 @@ ul li:hover .dropdown {
     background: #284274;
     background: linear-gradient(8deg, #133b71, #133b71, #284274, #284274);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
 }
@@ -323,6 +324,7 @@ button:hover {
     background: #284274;
     background: linear-gradient(8deg, #133b71, #133b71, #284274, #284274);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
 }
@@ -533,6 +535,7 @@ button:hover {
     background: #284274;
     background: linear-gradient(8deg, #133b71, #133b71, #284274, #284274);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
 }
@@ -634,6 +637,7 @@ button:hover {
     background: #284274;
     background: linear-gradient(8deg, #133b71, #133b71, #284274, #284274);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
 }
@@ -937,7 +941,8 @@ footer a:hover {
 
     /* Services */
     .services-container {
-        height: 115em;
+        height: auto;
+        padding-bottom: 50px;
     }
 
     .cards {
@@ -983,4 +988,21 @@ footer a:hover {
     .single-img {
         width: 410px;
     }
+}
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #133b71;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+#scrollTopBtn:hover {
+    background: #aa3f52;
 }

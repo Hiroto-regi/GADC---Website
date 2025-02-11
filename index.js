@@ -187,35 +187,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener('load', function() {
     const eventContainer = document.querySelector('.event');
-    const scrollSpeed = 5; // Adjust the speed of scrolling
+    const eventCards = document.querySelectorAll('.event-card, .event-card img');
+    const scrollSpeed = 7; // Slower speed for better readability
     let scrollDirection = 1; // 1 for forward, -1 for backward
 
     function autoScroll() {
-        // Check if reached the end or beginning
         if (eventContainer.scrollLeft >= eventContainer.scrollWidth - eventContainer.clientWidth) {
-            // Change direction to backward when reaching the end
             scrollDirection = -1;
         } else if (eventContainer.scrollLeft <= 0) {
-            // Change direction to forward when reaching the beginning
             scrollDirection = 1;
         }
-
-        // Scroll by the appropriate speed based on direction
         eventContainer.scrollLeft += scrollDirection * scrollSpeed;
     }
 
-    // Set interval for autoscrolling
-    const scrollInterval = setInterval(autoScroll, 50); // Adjust the interval time as needed for smoothness
+    let scrollInterval = setInterval(autoScroll, 80); // Slower interval for smoothness
 
-    // Pause autoscrolling when hovering over the event container
-    eventContainer.addEventListener('mouseenter', function() {
+    function stopAutoScroll() {
         clearInterval(scrollInterval);
-    });
+    }
 
-    // Resume autoscrolling when mouse leaves the event container
-    eventContainer.addEventListener('mouseleave', function() {
-        clearInterval(scrollInterval); // Clear previous interval to prevent stacking
-        setInterval(autoScroll, 50); // Adjust the interval time as needed for smoothness
+    function resumeAutoScroll() {
+        clearInterval(scrollInterval);
+        scrollInterval = setInterval(autoScroll, 80);
+    }
+
+    eventContainer.addEventListener('mouseenter', stopAutoScroll);
+    eventContainer.addEventListener('mouseleave', resumeAutoScroll);
+    
+    eventCards.forEach(card => {
+        card.addEventListener('mouseenter', stopAutoScroll);
+        card.addEventListener('mouseleave', resumeAutoScroll);
     });
 });
 

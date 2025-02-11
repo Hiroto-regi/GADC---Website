@@ -156,9 +156,12 @@ ul li:hover .dropdown {
 
 .container h3 {
     position: absolute;
-    margin-bottom: 920px;
-    font-size: 5rem;
+    top: 20px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
     color: #133b71;
+    z-index: 10; /* Ensure it stays above other elements */
 }
 
 .gallery {
@@ -178,15 +181,14 @@ footer {
     background-color: #133b71;
     color: #fdfdfd;
     text-align: center;
-    padding: 3px;
+    padding: 1px;
     bottom: 0;
     width: 100%;
-    position: sticky;
 }
 
 footer p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 footer a {
@@ -198,6 +200,23 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #133b71;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+#scrollTopBtn:hover {
+    background: #aa3f52;
 }
 
 /* Responsive Styles for Smaller Screens */

@@ -116,7 +116,27 @@
 
     <script src = "lightbox-plus-jquery.js"></script>
     <script src = "photos.js"></script>
-
+    <script>
+        // Scroll to Top Button
+        document.addEventListener('DOMContentLoaded', function () {
+                    const scrollTopBtn = document.createElement('button');
+                    scrollTopBtn.innerHTML = '&#8679;';
+                    scrollTopBtn.id = 'scrollTopBtn';
+                    document.body.appendChild(scrollTopBtn);
+                
+                    window.addEventListener('scroll', function () {
+                        if (window.scrollY > 300) {
+                            scrollTopBtn.style.display = 'block';
+                        } else {
+                            scrollTopBtn.style.display = 'none';
+                        }
+                    });
+                
+                    scrollTopBtn.addEventListener('click', function () {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    });
+                });
+                </script>
 
     <!-- Footer -->
         <footer>

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="about.css"/>
     <link rel="icon" href="img/gadclogo.png" sizes="32x32" type="image/png">
+    <title>About Us</title>
 </head>
 <script src="about.js"></script>
     <body>  
@@ -168,13 +169,35 @@
                 
             </div>
         </div>
-
+        <script>
+// Scroll to Top Button
+        document.addEventListener('DOMContentLoaded', function () {
+                    const scrollTopBtn = document.createElement('button');
+                    scrollTopBtn.innerHTML = '&#8679;';
+                    scrollTopBtn.id = 'scrollTopBtn';
+                    document.body.appendChild(scrollTopBtn);
+                
+                    window.addEventListener('scroll', function () {
+                        if (window.scrollY > 300) {
+                            scrollTopBtn.style.display = 'block';
+                        } else {
+                            scrollTopBtn.style.display = 'none';
+                        }
+                    });
+                
+                    scrollTopBtn.addEventListener('click', function () {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    });
+                });
+                </script>
         <!-- Footer -->
             <footer>
                 <p>&copy; 2020 GIS Applications Development Center. All rights reserved.</p>
                 <div class="social-links">
                     <a href="https://www.facebook.com/gis.center.bsutneug" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKFhPdrfndlJdvGlDdghhRthWZDVgmdxwFBRhKlkFNGWXwgGLXXszvgwGvLLLcVpwLrpL" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope-open"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gis.center@g.batstate-u.edu.ph" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-envelope-open"></i>
+                    </a>
                 </div>
             </footer>
             
